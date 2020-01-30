@@ -1,0 +1,51 @@
+body {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.ballon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  transition: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color:white;
+}
+
+.ballon.a {
+  background-color: gold;
+  left: 0;
+}
+
+.ballon.b {
+  background-color: palevioletred;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  width: 100%;
+}
+
+.canasta {
+  border: 1px red solid;
+  position: relative;
+}
+.canasta:hover .ballon {
+    height: 200px;
+    width: 200px;
+  }
+.canasta:hover .ballon.a {
+  left: calc(50% - 180px);
+}
+
+.canasta:hover .ballon.b {
+    right: calc(50% - 180px);
+  }
