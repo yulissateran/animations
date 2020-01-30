@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: Arial;
+}
+.container {
+    border: 1px solid red;
+}
+/* good practice aply transition to  a element as a child of  */
+.container:hover .cuadrado{
+    /* si es positivo rota hacia un lado, si en negativo hacia el otro */
+    /* transform: rotate(45deg); */
+    /* transform: rotate(-45deg); */
+    /* transform: rotateX(-45deg); */
+    /* transform: rotateY(-45deg); */
+    /* transform: rotateZ(-45deg); X and Y*/
+    /* transform: rotateX(45deg)  rotateY(45deg) rotateZ(45deg); */
+    /* transform: rotate3d(0,1,0,45deg); */
+}
+
+.cuadrado {
+  width: 200px;
+  height: 100px;
+  background-color: #7dc900;
+  margin: 20px;
+  transition: .3s;
+}
